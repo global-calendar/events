@@ -1,0 +1,34 @@
+/*
+`calendar` is required and MUST match [a-z ]+ regular expression.
+`month` is required and MUST be a digit.
+`day` is required and COULD be a digit or string like "first wed", "second tue", "last friday" or ...
+`description` is required and MUST contain at least "default" one and COULD have "short", "long". If it's not defined, it'll fallback to the default one.
+`tags` are optional and MUST match [a-z0-9 ]+ regular expression.
+`holiday` is optional and MUST contain the region (mostly country) names that this event is holiday in and MUST match [a-z ]+ regular expression.
+`refs` is optional and MUST contain web links.
+*/
+
+[
+  {
+    calendar: "jalali",
+    month: 1,
+    day: 1,
+    description: {
+      default: "New Year",
+      short: "New Year",
+      long: "Iranian New Year",
+    },
+    tags: [
+      "iran",
+      "iran official",
+      "persian",
+      "new year",
+    ],
+    holiday: [
+      "iran",
+    ],
+    refs: [
+      "https://en.wikipedia.org/wiki/Nowruz",
+    ],
+  }
+]
